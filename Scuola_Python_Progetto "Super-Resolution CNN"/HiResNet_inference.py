@@ -115,7 +115,7 @@ def plot_results_figure2(lowres_images, outputs, hires_images, start_idx=5, num_
     plt.show()
 
 
-# ✅ MAIN SCRIPT
+# MAIN SCRIPT
 if __name__ == "__main__":
     print("Inferenza Super-Resolution CNN:")
     print("Test su immagini MAI viste durante training/validation\n")
