@@ -247,7 +247,7 @@ def save_model_and_data(net, optimizer, train_losses, val_losses, test_loss, HiR
     print("Dati test salvati come 'test_data.pth'")
 
 
-# ✅ MAIN SCRIPT
+# MAIN SCRIPT
 if __name__ == "__main__":
     print("Training di una rete CNN 'Super-Resolution' ")
 
