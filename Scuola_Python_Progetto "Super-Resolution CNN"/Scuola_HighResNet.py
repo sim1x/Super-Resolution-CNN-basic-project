@@ -15,9 +15,9 @@ class HighResNet(torch.nn.Module):
         self.conv2 = nn.Conv2d(64, 64, 3, padding=1)
         self.conv3 = nn.Conv2d(64, 64, 3, padding=1)
 
-        # 32x32 → 64x64 → 128x128
-        self.upconv1 = nn.ConvTranspose2d(64, 32, 4, stride=2, padding=1)  # 32→64
-        self.upconv2 = nn.ConvTranspose2d(32, 16, 4, stride=2, padding=1)  # 64→128
+        
+        self.upconv1 = nn.ConvTranspose2d(64, 32, 4, stride=2, padding=1)  # 32-64
+        self.upconv2 = nn.ConvTranspose2d(32, 16, 4, stride=2, padding=1)  # 64-128
 
         self.final_conv = nn.Conv2d(16, 3, 3, padding=1)
 
